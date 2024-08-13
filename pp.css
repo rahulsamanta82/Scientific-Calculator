@@ -1,0 +1,107 @@
+body{
+    margin: auto;
+    /* background-color: aqua; */
+    /* background: rgb(2,0,36); */
+    /* background:   linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+    background: #4568DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+}
+#hadder{
+    font-size: 20px;
+    color: rgb(172, 0, 95);
+    padding-left: 25px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+  .color{
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #081bec;
+    text-shadow: 2px 2px 5px rgb(84, 75, 75);
+  }
+  .color1{
+    color: black;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: navy;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: rgb(0, 150, 152);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.calculator {
+   padding: 10px;
+  border-radius: 1em;
+   height: 380px;
+   width: 400px;
+   margin: auto;
+   /* content: center; */
+   background-color: #ff80bb;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;  
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;  
+    height: 65%;
+}
+
+#btn {
+    background-color: #a300fb;
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #2f045a;
+    color: white;
+    border: solid black 0.5px;  
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}

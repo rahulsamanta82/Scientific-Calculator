@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Area Calculator</title>
+  <link rel="stylesheet" type="text/css" href="area.css">
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <p id="hadder">Calculator</p>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="pp.html" target="_self">Simple</a>
+    <a href="calculator.html" target="_self">Scientific</a>
+    <a href="area.html" target="_self">Area</a>
+    <a href="age.html">Age</a>
+    <!-- <a href="#">History</a> -->
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="color1">&#9776; Area</span>
+  <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="font">&#9776; Age</span> -->
+  <div class="main">
+  <div class="container">
+    <h1>Area Calculator</h1>
+    <label for="shape"  class="a">Select a shape:</label>
+    <select id="shape" onchange="changeShape()">
+      <option value="all shape">All shape</option>
+      <option value="rectangle">Rectangle</option>
+      <option value="triangle">Triangle</option>
+      <option value="trapezoid">Trapezoid</option>
+      <option value="circle">Circle</option>
+      <option value="sector">Sector</option>
+      <option value="ellipse">Ellipse</option>
+      <option value="parallelogram">Parallelogram</option>
+    </select>
+    <div id="rectangle" class="shape">
+      <label for="rectLength" class="Length">Length:</label>
+      <input type="number" id="rectLength">
+      <label for="rectWidth" class="width">Width:</label>
+      <input type="number" id="rectWidth">
+      <button onclick="calculateRectangleArea()" class="calculate">Calculate</button>
+      <div id="rectResult"></div>
+      <div id="rectResult1"></div>
+    </div>
+    <div id="triangle" class="shape">
+      <label for="triBase" class="base">Base:</label>
+      <input type="number" id="triBase">
+      <label for="triHeight" class="height">Height:</label>
+      <input type="number" id="triHeight">
+      <button onclick="calculateTriangleArea()" class="calculate">Calculate</button>
+      <div id="triResult"></div>
+      <div id="triResult1"></div>
+    </div>
+    <div id="trapezoid" class="shape">
+      <label for="trapTop" class="top-length">Top Length:</label>
+      <input type="number" id="trapTop">
+      <label for="trapBottom" class="Bottom-length">Bottom Length:</label>
+      <input type="number" id="trapBottom">
+      <label for="trapHeight" class="height">Height:</label>
+      <input type="number" id="trapHeight">
+      <button onclick="calculateTrapezoidArea()" class="calculate">Calculate</button>
+      <div id="trapResult"></div>
+      <div id="trapResult1"></div>
+    </div>
+    <div id="circle" class="shape">
+      <label for="circleRadius" class="Radius">Radius:</label>
+      <input type="number" id="circleRadius">
+      <button onclick="calculateCircleArea()" class="calculate">Calculate</button>
+      <div id="circleResult"></div>
+      <div id="circleResult1"></div>
+    </div>
+    <div id="sector" class="shape">
+      <label for="sectorRadius" class="Radius">Radius:</label>
+      <input type="number" id="sectorRadius">
+      <label for="sectorAngle" class="central-angle">Central Angle:</label>
+      <input type="number" id="sectorAngle">
+      <button onclick="calculateSectorArea()" class="calculate">Calculate</button>
+      <div id="sectorResult"></div>
+      <div id="sectorResult1"></div>
+    </div>
+    <div id="ellipse" class="shape">
+      <label for="ellipseMajor" class="major-axis">Major Axis:</label>
+      <input type="number" id="ellipseMajor">
+      <label for="ellipseMinor" class="mainor-axis">Minor Axis:</label>
+      <input type="number" id="ellipseMinor">
+      <button onclick="calculateEllipseArea()" class="calculate">Calculate</button>
+      <div id="ellipseResult"></div>
+      <div id="ellipseResult1"></div>
+    </div>
+    <div id="parallelogram" class="shape">
+      <label for="paraBase" class="Base">Base:</label>
+      <input type="number" id="paraBase">
+      <label for="paraHeight" class="Height">Height:</label>
+      <input type="number" id="paraHeight">
+      <button onclick="calculateParallelogramArea()" class="calculate">Calculate</button>
+      <div id="paraResult"></div>
+      <div id="paraResult1"></div>  
+    </div>
+  </div>
+  </div>
+  <script src="area.js"></script>
+</body>
+</html>

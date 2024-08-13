@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+    <link rel="stylesheet" href="age.css">
+    <script defer src="age.js"></script>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <p id="hadder">Calculator</p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="pp.html" target="_self">Simple</a>
+        <a href="calculator.html" target="_self">Scientific</a>
+        <a href="area.html" target="_self">Area</a>
+        <a href="age.html">Age</a>
+        <!-- <a href="#">History</a> -->
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="color1">&#9776; Age</span>
+      <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="font" class="color">Age</span> -->
+
+      
+    <div class="container" onclick="age()">
+    <form>
+        <div class="base">
+            <h4>Age Calculator</h4>
+        <!-- </div> -->
+        <div class="block">
+            <p class="title">Date</p>
+            <input type="text" name="date" id="date" placeholder="dd" minlength="1" maxlength="2" required>
+        </div>
+        <div class="block">
+            <p class="title">Month</p>
+            <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2" required>
+        </div>
+        <div class="block">
+            <p class="title">Year</p>
+            <input type="text" name="year" id="year" placeholder="yyyy" minlength="4" maxlength="4" required>
+        </div>
+    </div>
+    <div class="base">
+        <input type="button" name="submit" value="submit" onclick="age()"/>
+    </div>
+    <div class="age" id="age"></div>
+    </form>
+    </div>
+    
+</body>
+</html>
